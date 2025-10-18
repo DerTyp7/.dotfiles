@@ -1,6 +1,6 @@
 # My Dotfiles
 
-My personal configuration files for various applications and tools running on CachyOS or Arch Linux.
+My personal configuration files for various applications and tools running on CachyOS.
 
 ## Installation
 
