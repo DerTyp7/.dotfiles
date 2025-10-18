@@ -2,6 +2,7 @@ sudo pacman -Syu --noconfirm\
                 cachyos-gaming-meta \
                 cachyos-gaming-applications \
                 dysk \
+                docker \
                 htop \
                 nvim \
                 godot \
