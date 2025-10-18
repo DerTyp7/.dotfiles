@@ -7,7 +7,7 @@ My personal configuration files for various applications and tools running on Ca
 1. To set up my dotfiles on your system, you can use the following command:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/DerTyp7/.dotfiles/refs/heads/master/setup.sh | sudo bash
+curl -sL https://raw.githubusercontent.com/DerTyp7/.dotfiles/refs/heads/master/setup.sh | bash
 ```
 
 2. Follow these guides:
