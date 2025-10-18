@@ -10,15 +10,13 @@ sudo pacman -Syu --noconfirm\
                 vlc \
                 brave-bin
 
-paru -S --noconfirm \
+paru -Syu --noconfirm \
         teamspeak \
         protonup-qt \
         brave-bin \
         prismlauncher \
         bottles \
         signal-desktop
-
-sudo sed -i -e '$a\' -e '# Increase Nvidia\'s shader cache size to 12GB' -e '__GL_SHADER_DISK_CACHE_SIZE=12000000000' /etc/environment
 
 git clone https://github.com/DerTyp7/.dotfiles.git ~/.config/.dotfiles
 mv * ~/.config/.dotfiles ~/.config
