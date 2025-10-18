@@ -20,9 +20,8 @@ paru -Syu --noconfirm \
         bottles \
         signal-desktop
 
-git clone https://github.com/DerTyp7/.dotfiles.git ~/.config/.dotfiles
-mv -f * ~/.config/.dotfiles ~/.config
-rm -rf ~/.config/.dotfiles
+git clone https://github.com/DerTyp7/.dotfiles.git ~/.config/
+rsync -a ~/.config/.dotfiles/ ~/.config/ && rm -rf ~/.config/.dotfiles
 
 read -r -p "Reboot now? (Y/n) " reply
 if [[ $reply =~ ^[Yy] ]]; then
