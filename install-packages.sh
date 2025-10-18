@@ -1,5 +1,3 @@
-#!/bin/bash
-
 sudo pacman -Syu --noconfirm\
                 cachyos-gaming-meta \
                 cachyos-gaming-applications \
@@ -10,7 +8,8 @@ sudo pacman -Syu --noconfirm\
                 discord \
                 obs-studio \
                 vlc \
-                brave-bin
+                brave-bin \
+		ttf-jetbrains-mono-nerd
 
 paru -Syu --noconfirm \
         teamspeak \
@@ -18,14 +17,5 @@ paru -Syu --noconfirm \
         brave-bin \
         prismlauncher \
         bottles \
-        signal-desktop
-
-git clone https://github.com/DerTyp7/.dotfiles.git ~/.config/
-rsync -a ~/.config/.dotfiles/ ~/.config/ && rm -rf ~/.config/.dotfiles
-
-read -r -p "Reboot now? (Y/n) " reply
-if [[ $reply =~ ^[Yy] ]]; then
-  sudo reboot now
-else
-  exit 0
-fi
+        signal-desktop \
+        visual-studio-code-bin
