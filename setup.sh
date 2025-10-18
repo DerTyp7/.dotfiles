@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo pacman -Syu --noconfirm\
                 cachyos-gaming-meta \
                 cachyos-gaming-applications \
@@ -19,7 +21,7 @@ paru -Syu --noconfirm \
         signal-desktop
 
 git clone https://github.com/DerTyp7/.dotfiles.git ~/.config/.dotfiles
-mv * ~/.config/.dotfiles ~/.config
+mv -f * ~/.config/.dotfiles ~/.config
 rm -rf ~/.config/.dotfiles
 
 read -r -p "Reboot now? (Y/n) " reply
