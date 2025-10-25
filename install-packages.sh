@@ -14,7 +14,6 @@ sudo pacman -Syu --noconfirm\
 		ttf-jetbrains-mono-nerd
 
 paru -Syu --noconfirm \
-        teamspeak \
         protonup-qt \
         brave-bin \
         prismlauncher \
