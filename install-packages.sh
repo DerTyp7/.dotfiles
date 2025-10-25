@@ -36,7 +36,7 @@ echo "[INFO] Download complete. Extracting..."
 mkdir -p "$TMPDIR/extracted"
 tar -xzf "$TMPDIR/teamspeak-client.tar.gz" -C "$TMPDIR/extracted"
 
-echo "[INFO] Installing TeamSpeak to /opt/teamspeak (may require sudo)..."
+echo "[INFO] Installing TeamSpeak to /opt/teamspeak..."
 sudo rm -rf /opt/teamspeak
 sudo mkdir -p /opt/teamspeak
 sudo rsync -a "$TMPDIR/extracted"/ /opt/teamspeak/
