@@ -25,7 +25,7 @@ paru -Syu --noconfirm \
         visual-studio-code-bin
 echo "[INFO] paru install finished."
 
-
+### TeamSpeak Client Installation
 TS_URL="https://files.teamspeak-services.com/pre_releases/client/6.0.0-beta3/teamspeak-client.tar.gz"
 TMPDIR="$(mktemp -d)"
 trap 'rm -rf "$TMPDIR"' EXIT
