@@ -45,9 +45,8 @@ echo "[INFO] Setting executable bit and ownership..."
 sudo chmod +x /opt/teamspeak/TeamSpeak
 sudo chown -R $(id -u):$(id -g) /opt/teamspeak
 
-echo "[INFO] Installing desktop entry..."
-mkdir -p "$HOME/.local/share/applications"
-curl -L --fail -sS -o "$HOME/.local/share/applications/TeamSpeak.desktop" "https://raw.githubusercontent.com/DerTyp7/.dotfiles/refs/heads/master/TeamSpeak.desktop"
-chmod 655 "$HOME/.local/share/applications/TeamSpeak.desktop"
+/opt/teamspeak/TeamSpeak > /dev/null 2>&1 &
+sleep 2
+pkill TeamSpeak
 
 echo "[INFO] TeamSpeak client installed to /opt/teamspeak"
