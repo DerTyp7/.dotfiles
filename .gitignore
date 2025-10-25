@@ -1,5 +1,6 @@
 *
 !install-packages.sh
+!*.desktop
 !README.md
 !install-software.md
 !.gitignore

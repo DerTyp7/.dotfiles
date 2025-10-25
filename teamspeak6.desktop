@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TeamSpeak 6
+GenericName=Voice Chat
+Comment=TeamSpeak 6 client
+Exec=/opt/teamspeak/TeamSpeak %U
+TryExec=opt/teamspeak/TeamSpeak
+Icon=opt/teamspeak/logo-48.png
+Terminal=false
+Categories=Network;AudioVideo;Voice;
+StartupWMClass=TeamSpeak
+MimeType=application/x-teamspeak;
+Keywords=voice;chat;voip;
+StartupNotify=true
